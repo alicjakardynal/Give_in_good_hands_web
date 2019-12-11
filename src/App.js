@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+// import logo from './logo.svg';
 import './App.css';
+
+import { HashRouter, Route, Switch } from "react-router-dom";
+
+import Home from './components/Home';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<HashRouter>
+  <Switch>
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/register" component={Register}/>
+    <Route exact path="/signin" component={SignIn}/>
+   
+  </Switch>
+
+</HashRouter>
+
   );
 }
 
+
+
+class Register extends Component{
+  render(){
+    return( <h1>Jestesmy w rejestracji</h1>)
+  }
+}
+
+class SignIn extends Component{
+  render(){
+    return( <h1>Jestesmy w logowaniu</h1>)
+  }
+}
+
+
 export default App;
+
+
+
+
+
