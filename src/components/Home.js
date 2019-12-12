@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import HomeHeader from './HomeHeader';
+
 import HomeContent from './HomeContent';
+import HomeThreeColumns from './HomeThreeColumns';
+import HomeHowToUseIt from './HomeHowToUseIt';
 
 
 class Home extends Component{
     render(){
       return( <>
-      <HomeHeader/>
+      
       <HomeContent/>
-      {/* <HomeThreeColumns/>
+      <HomeThreeColumns/>
       <HomeHowToUseIt/>
-      <HomeAboutUs/>
+      {/* <HomeAboutUs/>
       <HomeWhoWeHelp/>
       <HomeForm/>
       <HomeFooter/> */}

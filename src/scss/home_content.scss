@@ -1,0 +1,47 @@
+
+.content{
+    display: flex;
+    align-items: center;
+
+.content_banner{
+    background-image: url("../assets/Hero\ Image.png");
+    width: 45vw;
+    height: 100vh;
+   
+   background-position-x: right;
+    background-size: cover;
+}
+.content_text{
+    display: inline;
+    h2{
+        font-size: 2.3rem;
+        letter-spacing: -0.76px;
+        text-align: center;
+        padding: 10px 0;
+        
+    }
+    .decoration{
+        background-image: url("../assets/Decoration.svg");
+        height: 5vh;
+        width: 40%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 30%;
+        margin: 10px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .choosing{
+            font-weight: 300;
+            font-size: 2rem;
+            margin: 25px;
+            padding: 25px;
+            border: 0.75px solid $grey;
+            text-align: center;
+        }
+    }
+}
+}

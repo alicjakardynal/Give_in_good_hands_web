@@ -8,15 +8,9 @@
 body{
     font-family: $font-base;
     font-size: 12px;
+    color: $main_text;
 }
 
 @import "./head_header.scss";
-
-.content_banner{
-    background-image: url("../assets/Hero\ Image.png");
-    width: 45vw;
-    height: 900px;
-   
-   background-position-x: right;
-    background-size: cover;
-}
+@import "./home_content.scss";
+@import './head_three_columns.scss';

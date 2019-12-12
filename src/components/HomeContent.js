@@ -5,13 +5,18 @@ import { NavLink } from "react-router-dom";
 
 class HomeContent extends Component{
     render(){
-        return( <>
+        return( <section className='content'>
         <section className='content_banner'></section>
         <section className='content_text'>
             <h2>Zacznij pomagac!</h2>
-            <h2>Oddaj niechciane</h2>
+            <h2>Oddaj niechciane rzeczy w zaufane ręcę</h2>
+            <p className="decoration"></p>
+            <div>
+                <NavLink className="link choosing" exact to="/signin">ODDAJ RZECZY</NavLink>
+                <NavLink className="link choosing" exact to="/signin">ZORGANIZUJ ZBIÓRKĘ</NavLink>
+            </div>
         </section>
-        </>    )
+        </section>    )
     }
 }
 

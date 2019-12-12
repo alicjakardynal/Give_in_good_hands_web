@@ -5,15 +5,16 @@ import './App.css';
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Home from './components/Home';
+import HomeHeader from './components/HomeHeader';
 
 
 
 function App() {
   return (
 <HashRouter>
-  <Home/>
+  <HomeHeader/>
   <Switch>
-    {/* <Route exact path="/" component={Home}/> */}
+    <Route exact path="/" component={Home}/>
     <Route exact path="/register" component={Register}/>
     <Route exact path="/signin" component={SignIn}/>
    

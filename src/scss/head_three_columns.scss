@@ -1,0 +1,29 @@
+
+
+.three_columns{
+    height: 25vh;
+    width: 100%;
+    background-image: url("../assets/3\ Columns\ Background.png");
+    display: flex;
+    padding: 40px;
+    
+    div{
+        padding: 20px 140px;
+        text-align: center;
+        h2{
+            font-size: 5rem;
+            text-align: center;
+            font-weight: 300;
+        }
+        p:first-of-type{
+            font-size: 1rem;
+            padding: 20px;
+            
+        }
+        p:last-of-type{
+            font-size: 0.9rem;
+            letter-spacing: -0.32px;
+            font-weight: 300;
+        }
+    }
+}
