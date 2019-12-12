@@ -1,0 +1,35 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: fixed;
+    width: 90vw;
+    .nav_above,.nav_below{
+        display: flex;
+        justify-content: flex-end;  
+        padding: 10px 20px;
+    }
+    .link{
+        padding: 0 20px;
+        text-decoration: none;
+        color: $main_text;
+       
+    }
+    .above{
+        color: $grey;
+        padding: 10px 20px;
+        &:hover{
+            border: 0.75px solid $yellow;
+            
+        }
+    }
+    .below{
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        &:hover{
+            border: 0.75px solid $grey;
+            
+        }
+
+    }
+}

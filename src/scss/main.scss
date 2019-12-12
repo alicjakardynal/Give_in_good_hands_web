@@ -4,21 +4,19 @@
 
 
 
+
 body{
     font-family: $font-base;
+    font-size: 12px;
 }
 
-.navigation{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    .nav_above,.nav_below{
-        display: flex;
-        justify-content: flex-end;  
-        padding: 5px 20px;
-    }
-    .link{
-        padding: 0 20px;
-        text-decoration: none;
-    }
+@import "./head_header.scss";
+
+.content_banner{
+    background-image: url("../assets/Hero\ Image.png");
+    width: 45vw;
+    height: 900px;
+   
+   background-position-x: right;
+    background-size: cover;
 }

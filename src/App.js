@@ -11,8 +11,9 @@ import Home from './components/Home';
 function App() {
   return (
 <HashRouter>
+  <Home/>
   <Switch>
-    <Route exact path="/" component={Home}/>
+    {/* <Route exact path="/" component={Home}/> */}
     <Route exact path="/register" component={Register}/>
     <Route exact path="/signin" component={SignIn}/>
    
