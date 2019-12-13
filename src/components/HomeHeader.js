@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+
 import { NavLink } from "react-router-dom";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 
@@ -9,7 +10,7 @@ class HomeHeader extends Component {
     return (
       <>
         
-        <div className='navigation'>
+        <div className='navigation' id="header">
           <div className="nav_above">
             <NavAbove />
           </div>
@@ -43,21 +44,45 @@ class NavAbove extends Component {
     render() {
       return (
         <>
-          <NavLink className="link below" exact to="/signin">
+          <Link className="link below"  to="content">
             Start
-          </NavLink>
-          <NavLink className="link below" exact to="/register">
+          </Link>
+          <Link 
+          className="link below" 
+          to="howToUseIt"
+          spy={true}
+          smooth={true}
+          duration={700}
+          
+          >
             O co chodzi ?
-          </NavLink>
-          <NavLink className="link below" exact to="/register">
+          </Link>
+          <Link 
+          className="link below"  
+          to="aboutUs"
+          spy={true}
+          smooth={true}
+          duration={700}
+          >
             O nas
-          </NavLink>
-          <NavLink className="link below" exact to="/register">
+          </Link>
+          <Link 
+          className="link below" 
+          to="fundations"
+          spy={true}
+          smooth={true}
+          duration={700}
+          >
             Fundacja i organizacje
-          </NavLink>
-          <NavLink className="link below" exact to="/register">
+          </Link>
+          <Link className="link below" 
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={700}
+          >
             Kontakt
-          </NavLink>
+          </Link>
         </>
       );
     }

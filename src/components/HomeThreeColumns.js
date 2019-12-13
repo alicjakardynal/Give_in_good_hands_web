@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class HomeThreeColumns extends Component{
     render(){
         return(
-            <section className="three_columns">
+            <section className="three_columns" >
                 <div>
                     <h2>10</h2>
                     <p>ODDANYCH WORKÓW</p>

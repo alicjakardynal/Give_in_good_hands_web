@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 class HomeContent extends Component{
     render(){
-        return( <section className='content'>
+        return( <section className='content' id="content">
         <section className='content_banner'></section>
         <section className='content_text'>
             <h2>Zacznij pomagac!</h2>
