@@ -3,12 +3,12 @@ import React, { Component } from "react";
 class HomeHowToUseIt extends Component{
     render(){
         return(
-        <section>
-            <div>
-                <h2></h2>
-                <p></p>
+        <section className='how_to_use_it'>
+            <div className='four_steps_header'>
+                <h2>Wystarczą 4 proste kroki</h2>
+                <p className="decoration"></p>
             </div>
-            <div>
+            <div className='four_steps'>
                 <div>
                 <i className="icon"></i>
                 <h3>Wybierz rzeczy</h3>
@@ -30,6 +30,7 @@ class HomeHowToUseIt extends Component{
                 <p>kurier przyjedzie z dogodnym terminie</p>
                 </div>
             </div>
+            <div>ODDAJ RZECZY</div>
         </section>
 
         )

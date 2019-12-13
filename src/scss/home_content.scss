@@ -11,6 +11,8 @@
    background-position-x: right;
     background-size: cover;
 }
+
+
 .content_text{
     display: inline;
     h2{
@@ -20,16 +22,7 @@
         padding: 10px 0;
         
     }
-    .decoration{
-        background-image: url("../assets/Decoration.svg");
-        height: 5vh;
-        width: 40%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        left: 30%;
-        margin: 10px;
-    }
+    
     div{
         display: flex;
         justify-content: center;
@@ -45,3 +38,14 @@
     }
 }
 }
+
+.decoration{
+        background-image: url("../assets/Decoration.svg");
+        height: 5vh;
+        width: 30%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 35%;
+        margin: 10px;
+    }
