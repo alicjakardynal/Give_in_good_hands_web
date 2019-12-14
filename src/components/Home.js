@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import HomeContent from './HomeContent';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeHowToUseIt from './HomeHowToUseIt';
+import HomeAboutUs from "./HomeAboutUs";
+import HomeWhoWeHelp from "./HomeWhoWeHelp";
 
 
 class Home extends Component{
@@ -12,9 +14,9 @@ class Home extends Component{
       <HomeContent/>
       <HomeThreeColumns/>
       <HomeHowToUseIt/>
-      {/* <HomeAboutUs/>
+      <HomeAboutUs/>
       <HomeWhoWeHelp/>
-      <HomeForm/>
+      {/* <HomeForm/>
       <HomeFooter/> */}
       </>)
     }

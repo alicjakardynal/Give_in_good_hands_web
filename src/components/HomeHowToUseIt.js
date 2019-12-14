@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class HomeHowToUseIt extends Component{
     render(){
@@ -10,27 +11,28 @@ class HomeHowToUseIt extends Component{
             </div>
             <div className='four_steps'>
                 <div>
-                <i className="icon_shirt"></i>
+                <p className="icon_shirt"></p>
                 <h3>Wybierz rzeczy</h3>
-                <p>ubrania, zabawki, sprzęt i inne</p>
+                <p className="step_text">ubrania, zabawki, sprzęt i inne</p>
                 </div>
                 <div>
-                <i className="icon_bag"></i>
+                <p className="icon_bag"></p>
                 <h3>Spakuj je</h3>
-                <p>skorzystaj z worków na śmieci</p>
+                <p className="step_text">skorzystaj z worków na śmieci</p>
                 </div>
                 <div>
-                <i className="icon_glass"></i>
+                <p className="icon_glass"></p>
                 <h3>Zdecyduj komu chcesz pomóc</h3>
-                <p>wybierz zaufane miejsce</p>
+                <p className="step_text">wybierz zaufane miejsce</p>
                 </div>
                 <div>
-                <i className="icon_reverse"></i>
+                <p className="icon_reverse"></p>
                 <h3>Zamóc kuriera</h3>
-                <p>kurier przyjedzie z dogodnym terminie</p>
+                <p className="step_text">kurier przyjedzie z dogodnym terminie</p>
                 </div>
             </div>
-            <div>ODDAJ RZECZY</div>
+            <NavLink className="link four_steps_end" exact to="/signin">ODDAJ RZECZY</NavLink>
+            
         </section>
 
         )

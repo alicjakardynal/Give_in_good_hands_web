@@ -41,45 +41,49 @@ class NavAbove extends Component {
   }
   
   class NavBelow extends Component {
+    
     render() {
       return (
         <>
-          <Link className="link below"  to="content">
+          <Link 
+            className="link below"  
+            to="content">
             Start
           </Link>
           <Link 
-          className="link below" 
-          to="howToUseIt"
-          spy={true}
-          smooth={true}
-          duration={700}
+            className="link below" 
+            to="howToUseIt"
+            spy={true}
+            smooth={true}
+            duration={700}
           
           >
             O co chodzi ?
           </Link>
           <Link 
-          className="link below"  
-          to="aboutUs"
-          spy={true}
-          smooth={true}
-          duration={700}
+            className="link below"  
+            to="aboutUs"
+            spy={true}
+            smooth={true}
+            duration={700}
           >
             O nas
           </Link>
           <Link 
-          className="link below" 
-          to="fundations"
-          spy={true}
-          smooth={true}
-          duration={700}
+            className="link below" 
+            to="fundations"
+            spy={true}
+            smooth={true}
+            duration={700}
           >
             Fundacja i organizacje
           </Link>
-          <Link className="link below" 
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={700}
+          <Link 
+            className="link below" 
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={700}
           >
             Kontakt
           </Link>
