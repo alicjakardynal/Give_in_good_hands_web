@@ -5,6 +5,7 @@ import HomeThreeColumns from './HomeThreeColumns';
 import HomeHowToUseIt from './HomeHowToUseIt';
 import HomeAboutUs from "./HomeAboutUs";
 import HomeWhoWeHelp from "./HomeWhoWeHelp";
+import HomeForm from "./HomeForm";
 
 
 class Home extends Component{
@@ -16,8 +17,8 @@ class Home extends Component{
       <HomeHowToUseIt/>
       <HomeAboutUs/>
       <HomeWhoWeHelp/>
-      {/* <HomeForm/>
-      <HomeFooter/> */}
+      <HomeForm/>
+      {/* <HomeFooter/> */}
       </>)
     }
   }

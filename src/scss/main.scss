@@ -14,111 +14,59 @@ body {
 @import "./head_three_columns.scss";
 @import "./home_how_to_use_it.scss";
 @import "./home_about_us.scss";
+@import "./home_who_we_help.scss";
 
-.who_We_help {
-  > h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 50px 0 15px 0;
-  }
-  .decoration {
-    height: 4vh;
-    width: 18%;
-    left: 40%;
-  }
-
-  .three_choices {
+.form_section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  .form {
     display: flex;
-    padding: 10px 250px;
     justify-content: center;
-    align-items: center;
-    div {
-      padding: 20px 20px;
-      font-size: 1.5rem;
+    
+    height: 100%;
+    flex-direction: column;
+    padding: 0 90px 0 0;
+    h2{
+      font-size: 2rem;
+      padding: 60px;
       text-align: center;
-      margin: 0 20px;
-      // &:hover {
-      //   border: 2px solid $main_text;
-      // }
     }
-  }
-  .description {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 35px 600px;
-  }
+    .decoration {
+      position: absolute;
+      left: initial;
+      height: 3vh;
+      left: 75%;
+      top: 414%;
+    
+    }
 
-  li {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 20px;
-    div {
-      h3 {
-        font-size: 1.6rem;
-        font-family: $font-alt;
-        font-weight: 200;
-        padding: 10px 0;
+    form {
+      display: flex;
+      flex-direction: column;
+     
+      label{
+        padding: 20px;
+        display: inline-block;
+       
+        
       }
-      p {
-        font-size: 0.9rem;
-        font-family: $font-alt;
+      input {
+        display:block;
+      }
+      textarea{
+        display: block;
       }
       
+      .send{
+        width: 15%;
+       float: right;
+      }
     }
-    p {
-      font-size: 1.1rem;
-      font-family: $font-alt;
-    }
-  }
-  li:first-of-type::after {
-    content: " ";
-    width: 71vw;
-    height: 0.75px;
-    background-color: $grey;
-    position: absolute;
-    top: 322%;
-  }
-  li:nth-of-type(2)::after {
-    content: " ";
-    width: 71vw;
-    height: 0.75px;
-    background-color: $grey;
-    position: absolute;
-    top: 332%;
-  }
-  li:nth-of-type(3)::after {
-    content: " ";
-    width: 71vw;
-    height: 0.75px;
-    background-color: $grey;
-    position: absolute;
-    top: 342%;
-  }
-  li:nth-of-type(4)::after {
-    content: " ";
-    width: 71vw;
-    height: 1px;
-    background-color: $grey;
-    position: absolute;
-    top: 352%;
-  }
-  .which_choosen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-
-    p {
-      padding: 15px;
-      margin: 0 10px;
-    }
-    .added_border {
-      border: 1px solid $grey;
-
-    }
-  }
-  .border{
-    border: 0.75px solid $main_text;
   }
 }

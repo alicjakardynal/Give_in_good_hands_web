@@ -47,7 +47,10 @@ class NavAbove extends Component {
         <>
           <Link 
             className="link below"  
-            to="content">
+            to="content"
+            spy={true}
+            smooth={true}
+            duration={700}>
             Start
           </Link>
           <Link 
@@ -56,6 +59,7 @@ class NavAbove extends Component {
             spy={true}
             smooth={true}
             duration={700}
+            offset={-200}
           
           >
             O co chodzi ?
@@ -66,6 +70,7 @@ class NavAbove extends Component {
             spy={true}
             smooth={true}
             duration={700}
+            offset={-80}
           >
             O nas
           </Link>

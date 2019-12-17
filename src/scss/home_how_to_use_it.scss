@@ -74,17 +74,28 @@
         font-size: 0.9rem;
         padding: 10px;
       }
-      h3::after {
+      h3:first-of-type::after {
         content: " ";
-        width: 60px;
-        height: 2px;
-        background-color: $main_text;
+        width: 65px;
+        height: 1px;
+        background-color: $grey;
         position: absolute;
-        left: 19%;
-        top:167%;
+        left: 16.5%;
+        top:170%;
         
   
       }
+      // h3:last-of-type::after{
+      //   content: " ";
+      //   width: 65px;
+      //   height: 1px;
+      //   background-color: $grey;
+      //   position: absolute;
+      //   left: 50%;
+      //   top:170%;
+        
+  
+      // }
   
       .step_text {
         padding: 20px 20px;

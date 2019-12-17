@@ -1,0 +1,108 @@
+.who_We_help {
+    > h2 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 50px 0 15px 0;
+    }
+    .decoration {
+      height: 4vh;
+      width: 18%;
+      left: 40%;
+    }
+  
+    .three_choices {
+      display: flex;
+      padding: 10px 250px;
+      justify-content: center;
+      align-items: center;
+      div {
+        padding: 20px 20px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 20px;
+        // &:hover {
+        //   border: 2px solid $main_text;
+        // }
+      }
+    }
+    .description {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 35px 600px;
+    }
+  
+    li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 20px;
+      div {
+        h3 {
+          font-size: 1.6rem;
+          font-family: $font-alt;
+          font-weight: 200;
+          padding: 10px 0;
+        }
+        p {
+          font-size: 0.9rem;
+          font-family: $font-alt;
+        }
+        
+      }
+      p {
+        font-size: 1.1rem;
+        font-family: $font-alt;
+      }
+    }
+    li:first-of-type::after {
+      content: " ";
+      width: 71vw;
+      height: 0.75px;
+      background-color: $grey;
+      position: absolute;
+      top: 322%;
+    }
+    li:nth-of-type(2)::after {
+      content: " ";
+      width: 71vw;
+      height: 0.75px;
+      background-color: $grey;
+      position: absolute;
+      top: 332%;
+    }
+    li:nth-of-type(3)::after {
+      content: " ";
+      width: 71vw;
+      height: 0.75px;
+      background-color: $grey;
+      position: absolute;
+      top: 342%;
+    }
+    li:nth-of-type(4)::after {
+      content: " ";
+      width: 71vw;
+      height: 1px;
+      background-color: $grey;
+      position: absolute;
+      top: 352%;
+    }
+    .which_choosen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+  
+      p {
+        padding: 15px;
+        margin: 0 10px;
+      }
+      .added_border {
+        border: 1px solid $grey;
+  
+      }
+    }
+    .border{
+      border: 0.75px solid $main_text;
+    }
+  }
+  

@@ -20,7 +20,7 @@ class HomeWhoWeHelp extends Component{
 
     render() {
         return (
-            <section className='who_We_help'>
+            <section className='who_We_help' id="fundations">
                 <h2>Komu pomagamy?</h2>
                 <p className="decoration"></p>
                 <div className='three_choices'> 
