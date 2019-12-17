@@ -33,19 +33,19 @@ body {
     justify-content: center;
     align-items: center;
     div {
-      padding: 10px 10px;
+      padding: 20px 20px;
       font-size: 1.5rem;
       text-align: center;
       margin: 0 20px;
-      &:hover {
-        border: 2px solid $main_text;
-      }
+      // &:hover {
+      //   border: 2px solid $main_text;
+      // }
     }
   }
   .description {
     text-align: center;
     font-size: 0.9rem;
-    padding: 35px 300px;
+    padding: 35px 600px;
   }
 
   li {
@@ -57,47 +57,51 @@ body {
       h3 {
         font-size: 1.6rem;
         font-family: $font-alt;
+        font-weight: 200;
         padding: 10px 0;
       }
       p {
         font-size: 0.9rem;
+        font-family: $font-alt;
       }
+      
     }
     p {
       font-size: 1.1rem;
+      font-family: $font-alt;
     }
   }
   li:first-of-type::after {
     content: " ";
-    width: 80vw;
-    height: 2px;
+    width: 71vw;
+    height: 0.75px;
     background-color: $grey;
     position: absolute;
-    top: 323%;
+    top: 322%;
   }
   li:nth-of-type(2)::after {
     content: " ";
-    width: 80vw;
-    height: 2px;
+    width: 71vw;
+    height: 0.75px;
     background-color: $grey;
     position: absolute;
-    top: 333%;
+    top: 332%;
   }
   li:nth-of-type(3)::after {
     content: " ";
-    width: 80vw;
-    height: 2px;
+    width: 71vw;
+    height: 0.75px;
     background-color: $grey;
     position: absolute;
-    top: 343%;
+    top: 342%;
   }
   li:nth-of-type(4)::after {
     content: " ";
-    width: 80vw;
-    height: 2px;
+    width: 71vw;
+    height: 1px;
     background-color: $grey;
     position: absolute;
-    top: 353%;
+    top: 352%;
   }
   .which_choosen {
     display: flex;
@@ -113,5 +117,8 @@ body {
       border: 1px solid $grey;
 
     }
+  }
+  .border{
+    border: 0.75px solid $main_text;
   }
 }

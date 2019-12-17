@@ -4,7 +4,7 @@ import organizations from "../database/organizations";
 
 class HomeWhoWeHelp extends Component{
     state={
-        currentOrganizationType: 0,
+        currentOrganizationType: 1,
     }
 
 
@@ -14,7 +14,9 @@ class HomeWhoWeHelp extends Component{
         })
     }
 
-   
+   borderedDiv=()=>{
+
+   }
 
     render() {
         return (
@@ -22,9 +24,9 @@ class HomeWhoWeHelp extends Component{
                 <h2>Komu pomagamy?</h2>
                 <p className="decoration"></p>
                 <div className='three_choices'> 
-                    <div onClick={()=>this.handleName(0)}>Fundacjom</div>
-                    <div onClick={()=>this.handleName(1)}>Organizacjom pozarządowym</div>
-                    <div onClick={()=>this.handleName(2)}>Lokalnym zbiórkom</div>
+                    <div onClick={()=>this.handleName(0)} className={this.state.currentOrganizationType ==0 && "border"}>Fundacjom</div>
+                    <div onClick={()=>this.handleName(1)} className={this.state.currentOrganizationType ==1 && "border"}>Organizacjom pozarządowym</div>
+                    <div onClick={()=>this.handleName(2)} className={this.state.currentOrganizationType ==2 && "border"}>Lokalnym zbiórkom</div>
                 </div>
                 <p className='description'>{organizations.organizations[this.state.currentOrganizationType].description}</p>
                 <ul>
@@ -33,15 +35,16 @@ class HomeWhoWeHelp extends Component{
                        <div>
                             <h3>{each.name}</h3>
                             <p>{each.mission}</p>
+                          
                         </div>
                         <p>{each.things}</p>
                     </li>)}
                 </ul>
                 
                 <div className='which_choosen'> 
-                    <p className='added_border'>1</p>
-                    <p>2</p>
-                    <p>3</p>
+                    <p onClick={()=>this.handleName(0)} className={this.state.currentOrganizationType ==0 && 'added_border'}>1</p>
+                    <p onClick={()=>this.handleName(1)} className={this.state.currentOrganizationType ==1 && 'added_border'}>2</p>
+                    <p onClick={()=>this.handleName(2)} className={this.state.currentOrganizationType ==2 && 'added_border'}>3</p>
                 </div>
                 
             </section>
