@@ -1,39 +1,48 @@
 import React, { Component } from "react";
+import organizations from "../database/organizations";
+
 
 class HomeWhoWeHelp extends Component{
     state={
-        funadationView: true,
-        organizationsView: false,
-        localsView: false,
+        currentOrganizationType: 0,
     }
 
 
-    componentDidMount() {
-        changingView()
+    handleName=(number)=>{
+        this.setState({
+            currentOrganizationType:number,
+        })
     }
 
-    changingView = () => {
-       fetch(`....`,
-                {
-                    method: 'GET'
-                })
-                .then(resp => {
-                     return resp.json();
-            
-                })
-            }
-
+   
 
     render() {
         return (
-            <section>
-                <h2>Komy pomagamy?</h2>
+            <section className='who_We_help'>
+                <h2>Komu pomagamy?</h2>
                 <p className="decoration"></p>
-                <div> te trzy do wybierania opcje</div>
-                <Fundation funadationView={this.state.funadationView}/>
-                <Organization organizationsView={this.state.organizationsView}/>
-                <Local  localsView={this.state.localsView}/>
-                <div> tutaj przyciski i na onClicku każdego będzie zmieniał false na true</div>
+                <div className='three_choices'> 
+                    <div onClick={()=>this.handleName(0)}>Fundacjom</div>
+                    <div onClick={()=>this.handleName(1)}>Organizacjom pozarządowym</div>
+                    <div onClick={()=>this.handleName(2)}>Lokalnym zbiórkom</div>
+                </div>
+                <p className='description'>{organizations.organizations[this.state.currentOrganizationType].description}</p>
+                <ul>
+                    {organizations.organizations[this.state.currentOrganizationType].foundations.map((each, index)=>
+                    <li key={index}>
+                       <div>
+                            <h3>{each.name}</h3>
+                            <p>{each.mission}</p>
+                        </div>
+                        <p>{each.things}</p>
+                    </li>)}
+                </ul>
+                
+                <div className='which_choosen'> 
+                    <p className='added_border'>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
                 
             </section>
         )
