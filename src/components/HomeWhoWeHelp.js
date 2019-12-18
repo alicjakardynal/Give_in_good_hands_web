@@ -5,6 +5,9 @@ import organizations from "../database/organizations";
 class HomeWhoWeHelp extends Component{
     state={
         currentOrganizationType: 1,
+        currentPage:1,
+        firstNumberToShow:0,
+        lastNUmberToShow:3,
     }
 
 
@@ -13,10 +16,24 @@ class HomeWhoWeHelp extends Component{
             currentOrganizationType:number,
         })
     }
+handlePage=(number)=>{
+    this.setState({
+        currentPage:number,
+    })
+}
+    handleNumbers=(number1,number2)=>{
+this.setState({
+    firstNumberToShow:number1,
+    lastNUmberToShow:number2,
+})
+    if(this.state.currentPage===1){
+    this.handlePage(2)
+    }
+    else{this.handlePage(1)}
 
-   borderedDiv=()=>{
-
-   }
+    }
+   
+  
 
     render() {
         return (
@@ -30,7 +47,8 @@ class HomeWhoWeHelp extends Component{
                 </div>
                 <p className='description'>{organizations.organizations[this.state.currentOrganizationType].description}</p>
                 <ul>
-                    {organizations.organizations[this.state.currentOrganizationType].foundations.map((each, index)=>
+                    {organizations.organizations[this.state.currentOrganizationType].foundations.slice
+                    (this.state.firstNumberToShow,this.state.lastNUmberToShow).map((each, index)=>
                     <li key={index}>
                        <div>
                             <h3>{each.name}</h3>
@@ -42,9 +60,9 @@ class HomeWhoWeHelp extends Component{
                 </ul>
                 
                 <div className='which_choosen'> 
-                    <p onClick={()=>this.handleName(0)} className={this.state.currentOrganizationType ==0 && 'added_border'}>1</p>
-                    <p onClick={()=>this.handleName(1)} className={this.state.currentOrganizationType ==1 && 'added_border'}>2</p>
-                    <p onClick={()=>this.handleName(2)} className={this.state.currentOrganizationType ==2 && 'added_border'}>3</p>
+                    <p onClick={()=>this.handleNumbers(0,3)}  className={this.state.currentPage ==1 && 'added_border'}>1</p>
+                    <p onClick={()=>this.handleNumbers(3,5)}  className={this.state.currentPage ==2 && 'added_border'}>2</p>
+                   
                 </div>
                 
             </section>

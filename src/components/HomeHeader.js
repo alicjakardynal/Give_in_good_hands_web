@@ -6,6 +6,13 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 
 
 class HomeHeader extends Component {
+
+  componentDidMount() {
+  const cos= document.addEventListener('scroll', function(){
+    console.log(window.pageYOffset)
+  })
+}
+
   render() {
     return (
       <>
