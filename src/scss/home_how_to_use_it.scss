@@ -1,117 +1,113 @@
 .how_to_use_it {
-    height: 65vh;
-    width: 100%;
-    .four_steps_header {
-      padding: 20px;
-      height: 20%;
-      h2 {
-        text-align: center;
-        font-size: 2rem;
-        padding: 20px;
-      }
-      p {
-        width: 14%;
-        left: 42%;
-      }
-    }
-    .four_steps {
-      background-color: $background;
-      width: 100%;
-      height: 50%;
-      display: flex;
-      justify-content: space-around;
-      padding: 40px 0;
-      align-items: center;
-      padding: 0 150px;
-      box-sizing: border-box;
-  
-      div {
-        text-align: center;
-        padding: 0 10px;
-      }
-  
-      .icon_shirt {
-        background-image: url("../assets/Icon-1.svg");
-        width: 100%;
-        height: 80px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-align: center;
-        position: relative;
-        left: 30%;
-      }
-      .icon_bag {
-        background-image: url("../assets/Icon-2.svg");
-        width: 100%;
-        height: 80px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-align: center;
-        position: relative;
-        left: 30%;
-      }
-      .icon_glass {
-        background-image: url("../assets/Icon-3.svg");
-        width: 100%;
-        height: 80px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-align: center;
-        position: relative;
-        left: 30%;
-      }
-      .icon_reverse {
-        background-image: url("../assets/Icon-4.svg");
-        width: 100%;
-        height: 80px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-align: center;
-        position: relative;
-        left: 30%;
-      }
-      h3 {
-        font-size: 0.9rem;
-        padding: 10px;
-      }
-      h3:first-of-type::after {
-        content: " ";
-        width: 65px;
-        height: 1px;
-        background-color: $grey;
-        position: absolute;
-        left: 16.5%;
-        top:170%;
-        
-  
-      }
-      // h3:last-of-type::after{
-      //   content: " ";
-      //   width: 65px;
-      //   height: 1px;
-      //   background-color: $grey;
-      //   position: absolute;
-      //   left: 50%;
-      //   top:170%;
-        
-  
-      // }
-  
-      .step_text {
-        padding: 20px 20px;
-      }
-    }
-    .four_steps_end{
-      font-weight: 300;
-      font-size: 2rem;
-      margin: 25px;
-      padding: 15px 50px;
-      border: 0.75px solid #737373;
+  position: relative;
+  width: 100%;
+  .four_steps_header {
+    padding: 20px;
+    height: 20%;
+    h2 {
       text-align: center;
-      width: 10%;
-      position: absolute;
-      left: 40%;
-      top: 183%;
-  
+      font-size: 2rem;
+      padding: 20px;
+    }
+    p {
+      width: 14%;
+      left: 42%;
     }
   }
+  .four_steps {
+    background-color: $background;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    padding: 50px 150px;
+    box-sizing: border-box;
+
+    div {
+      text-align: center;
+      padding: 0 10px;
+      position: relative;
+    }
+
+    .icon_shirt {
+      background-image: url("../assets/Icon-1.svg");
+
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      position: relative;
+      left: 30%;
+    }
+    .icon_bag {
+      background-image: url("../assets/Icon-2.svg");
+
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      position: relative;
+      left: 30%;
+    }
+    .icon_glass {
+      background-image: url("../assets/Icon-3.svg");
+
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      position: relative;
+      left: 30%;
+    }
+    .icon_reverse {
+      background-image: url("../assets/Icon-4.svg");
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      position: relative;
+      left: 30%;
+    }
+    h3 {
+      font-size: 0.9rem;
+      padding: 16px;
+      text-align: center;
+    }
+
+    h3::after {
+      content: " ";
+      width: 70px;
+      height: 1px;
+      background-color: $grey;
+      position: absolute;
+      top: 70%;
+      left: 35%;
+    }
+
+    .step_text {
+      padding: 20px 20px;
+    }
+  }
+  .four_steps_end {
+    background-color: white;
+    position: relative;
+    padding: 42px;
+    .four_steps_end_link {
+      font-weight: 300;
+      font-size: 2rem;
+
+      padding: 15px 20px;
+      border: 0.75px solid #737373;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      left: 40%;
+      &:hover{
+        background-color: #F0F1F1;
+        transition: 1s;
+      }
+    }
+  }
+}

@@ -31,7 +31,9 @@ class HomeHowToUseIt extends Component{
                 <p className="step_text">kurier przyjedzie z dogodnym terminie</p>
                 </div>
             </div>
-            <NavLink className="link four_steps_end" exact to="/signin">ODDAJ RZECZY</NavLink>
+            <div className="four_steps_end">
+            <NavLink className="link four_steps_end_link" exact to="/signin">ODDAJ RZECZY</NavLink>
+            </div>
             
         </section>
 

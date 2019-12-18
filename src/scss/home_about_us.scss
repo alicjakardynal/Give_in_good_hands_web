@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     div:first-of-type{
         width: 50vw;
         h2{
@@ -30,7 +31,7 @@
             background-repeat: no-repeat;
             position: absolute;
             left: 30%;
-            top: 256%;
+            top: 71%;
             padding: 34px;
         
         }

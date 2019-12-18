@@ -7,9 +7,9 @@
       padding: 50px 0 15px 0;
     }
     .decoration {
-      height: 4vh;
+      height: 3vh;
       width: 18%;
-      left: 40%;
+      left: 43%;
     }
   
     .three_choices {
@@ -38,6 +38,7 @@
       justify-content: space-around;
       align-items: center;
       padding: 20px 20px;
+      position: relative;
       div {
         h3 {
           font-size: 1.6rem;
@@ -56,38 +57,20 @@
         font-family: $font-alt;
       }
     }
-    li:first-of-type::after {
+    li::after {
       content: " ";
       width: 71vw;
       height: 0.75px;
       background-color: $grey;
       position: absolute;
-      top: 322%;
+      top: 100%;
+      
     }
-    li:nth-of-type(2)::after {
+    li:last-of-type::after{
       content: " ";
-      width: 71vw;
-      height: 0.75px;
-      background-color: $grey;
-      position: absolute;
-      top: 332%;
+      background-color: transparent;
     }
-    li:nth-of-type(3)::after {
-      content: " ";
-      width: 71vw;
-      height: 0.75px;
-      background-color: $grey;
-      position: absolute;
-      top: 342%;
-    }
-    li:nth-of-type(4)::after {
-      content: " ";
-      width: 71vw;
-      height: 1px;
-      background-color: $grey;
-      position: absolute;
-      top: 352%;
-    }
+    
     .which_choosen {
       display: flex;
       justify-content: center;

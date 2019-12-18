@@ -34,6 +34,10 @@
             padding: 25px;
             border: 0.75px solid $grey;
             text-align: center;
+            &:hover{
+                background-color: rgb(192, 226, 240);
+                transition: 1s;
+            }
         }
     }
 }

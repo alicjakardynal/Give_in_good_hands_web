@@ -10,16 +10,20 @@ class HomeForm extends Component{
                 <form>
                     <div>
                     <label>Wpisz swoje imię:
-                        <input type="text" name="username"/>
+                        <input type="text"  placeholder="Krzysztof"name="username"/>
                     </label>
                     <label>Wpisz swoj email:
-                        <input type="email" name="useremail"/>
+                        <input type="email" placeholder="xyz@.pl" name="useremail"/>
                     </label>
                     </div>
                     <label className="text_area">Wpisz swoją wiadomość:
-                        <textarea cols="50" rows="10"/>
+                        <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
                     </label>
+                    <div className="send_button">
                     <input className="send" type="submit" value="Wyślij"/>
+                    </div>
                 </form>
                 </div>
             </section>
