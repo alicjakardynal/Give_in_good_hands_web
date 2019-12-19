@@ -6,6 +6,9 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
+import Register from "./components/Register";
+import SignIn from "./components/SignIn"
+
 
 
 
@@ -27,17 +30,6 @@ function App() {
 
 
 
-class Register extends Component{
-  render(){
-    return( <h1>Jestesmy w rejestracji</h1>)
-  }
-}
-
-class SignIn extends Component{
-  render(){
-    return( <h1>Jestesmy w logowaniu</h1>)
-  }
-}
 
 
 export default App;

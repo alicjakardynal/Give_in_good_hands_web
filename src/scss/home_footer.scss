@@ -1,0 +1,30 @@
+footer{
+
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 448%;
+    left:42%;
+    
+    .icon_fb{
+      background-image: url("../assets/Facebook.svg");
+      background-size: cover;
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      position: relative;
+      left: 245%;
+  
+    }
+    .icon_ig{
+      background-image: url("../assets/Instagram.svg");
+      background-size: cover;
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      position: relative;
+      left: 270%;
+    }
+  }
+  
+  

@@ -16,33 +16,55 @@ body {
 @import "./home_about_us.scss";
 @import "./home_who_we_help.scss";
 @import "./home_form.scss";
+@import "./home_footer.scss";
 
-footer{
-
-  text-align: center;
-  font-size: 1rem;
-  position: absolute;
-  top: 448%;
-  left:42%;
-  
-  .icon_fb{
-    background-image: url("../assets/Facebook.svg");
-    background-size: cover;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    position: relative;
-    left: 245%;
-
+.register,
+.signing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  h2 {
+    font-size: 2rem;
+    padding: 25px;
   }
-  .icon_ig{
-    background-image: url("../assets/Instagram.svg");
-    background-size: cover;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    position: relative;
-    left: 270%;
+  p {
+    height: 3vh;
+    left: 0;
+    width: 12%;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f1f1;
+    padding: 40px;
+    label {
+      padding: 15px;
+    }
+    input {
+      display: block;
+      padding: 8px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $grey;
+    }
+  }
+  div{
+    padding: 35px 0;
+    .sign{
+      margin: 0 115px;
+      padding: 10px;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      &:hover{
+        border: 1px solid $grey;
+
+      }
+      
+    }
   }
 }
-
