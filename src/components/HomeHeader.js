@@ -13,34 +13,31 @@ import {
 
 class HomeHeader extends Component {
   state = {
-    currentScroll: 0
+    pageScrolled: false
   };
 
-  // componentDidMount() {
-  //   document.addEventListener("scroll", function() {
-  //     console.log(window.pageYOffset);
-  //   });
-  // }
+  componentDidMount() {
+    document.addEventListener("scroll", ()=> {
+      if(window.pageYOffset>0){
+        this.setState({
+          pageScrolled:true
+        })
+      }else{
+        this.setState({
+          pageScrolled:false
+        })
+      }
+    });
+  }
 
-  // componentDidUpdate() {
-  //   console.log(window.pageYOffset);
-  //   if (window.pageYOffset > 0) {
-  //     this.setState({
-  //       currentScroll: 1
-  //     });
-  //   } else {
-  //     this.setState({
-  //       currentScroll: 0
-  //     });
-  //   }
-  // }
+ 
 
   render() {
     return (
       <>
         <div
           className={
-            this.state.currentScroll === 1
+            this.state.pageScrolled
               ? "navigation nav_background"
               : "navigation"
           }
