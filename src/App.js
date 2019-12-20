@@ -7,7 +7,8 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
 import Register from "./components/Register";
-import SignIn from "./components/SignIn"
+import SignIn from "./components/SignIn";
+import LogOut from "./components/LogOut";
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Route exact path="/" component={Home}/>
     <Route exact path="/register" component={Register}/>
     <Route exact path="/signin" component={SignIn}/>
+    <Route exact path="/logout" component={LogOut}/>
    
   </Switch>
 

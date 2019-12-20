@@ -1,0 +1,27 @@
+
+.log_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    h2{
+      font-size: 2rem;
+      padding: 25px;
+    }
+    p {
+      height: 3vh;
+      left: 0;
+      width: 12%;
+    }
+    .log_out_link{
+      text-decoration: none;
+      color: $main_text;
+      font-size: 1rem;
+      padding: 20px;
+      border: 1px solid transparent;
+        &:hover{
+          border: 1px solid $grey;
+    }
+  }}
