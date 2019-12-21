@@ -22,7 +22,21 @@
     align-items: center;
     flex-direction: column;
     background-color: #f0f1f1;
-    padding: 40px 90px;
+    padding: 30px 90px;
+    position: relative;
+    div{
+      position: relative;
+      padding: 27px;
+      .error{
+        position: absolute;
+      color: red;
+      font-size: 0.7rem;
+      width: 100%;
+      left: 10%;
+  
+    
+    }
+    }
     label {
       padding: 15px;
     }
@@ -34,13 +48,19 @@
       border-bottom: 2px solid $grey;
     }
   }
-  div{
+  .buttons{
     padding: 35px 0;
+    position: absolute;
+    top:95%;
+    display: flex;
+    width: 130%;
+    justify-content: space-between;
     .sign{
-      margin: 0 115px;
+      margin: 0 50px;
       padding: 10px;
       font-size: 0.9rem;
       border: 1px solid transparent;
+      color: #3C3C3C;
       &:hover{
         border: 1px solid $grey;
 
