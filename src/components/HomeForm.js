@@ -28,7 +28,10 @@ class HomeForm extends Component {
             name:this.state.name,
             email:this.state.email,
             message:this.state.message,
-        } )
+        } ),
+        header: {
+            "Content-Type": "application/json"
+          }
       });
 
   }
