@@ -2,7 +2,7 @@ This project is a website with subpages about donating clothes to different orga
 - create account
 - find organisation which you want to donate
 - pack your clothes
-- give it to courier
+- give it to the courier
 
 The website is made by React, Javascript, Sass.
 
