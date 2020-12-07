@@ -81,7 +81,9 @@ class NavBelow extends Component {
           smooth={true}
           duration={700}
         >
+          <NavLink className="start_nav_link" exact to="/">
           Start
+          </NavLink>
         </Link>
         <Link
           className="link below"

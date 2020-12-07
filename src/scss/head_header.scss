@@ -11,6 +11,10 @@
         display: flex;
         justify-content: flex-end;  
         padding: 10px 20px;
+        .start_nav_link{
+            text-decoration: none;
+            color: $main_text;
+        }
     }
   
     .above{
@@ -30,7 +34,7 @@
             border: 0.75px solid $grey;
             
         }
-
+   
     }
 }
   .link{

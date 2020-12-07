@@ -64,7 +64,7 @@ this.setState({
                     <p onClick={()=>this.handleNumbers(3,5)}  className={this.state.currentPage ==2 && 'added_border'}>2</p>
                    
                 </div>
-                
+                                
             </section>
         )
     }

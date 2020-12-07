@@ -20,7 +20,10 @@ class HomeForm extends Component {
   sendLoginData = () => {
       console.log("wysyla sie ");
       this.setState({
-          sended:"Wiadomość została wysłana.Wkrótce się skontaktujemy"
+          sended:"Wiadomość została wysłana.Wkrótce się skontaktujemy",
+          wrongMessage: "",
+          wrongEmail: "",
+          wrongName: "",
       });
       fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
         method : 'POST',
@@ -38,7 +41,7 @@ class HomeForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    if (/\s/.test(this.state.name)) {
+    if (/\s/.test(this.state.name) || this.state.name.length<1) {
       this.setState({
         wrongName: "Podane imię jest nieprawidłowe!"
       });
@@ -53,7 +56,9 @@ class HomeForm extends Component {
         wrongMessage: "Wiadomość musi mieć conajmniej 120 znaków"
       });
     }
-    this.sendLoginData();
+    else{
+      this.sendLoginData();
+    }
     //w przeciwnym nie ma tych to wysylam do fetcha
   };
 
